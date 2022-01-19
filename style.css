@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
-/* Weights : 500, 600 */
 
 *, ::before, ::after{
     box-sizing: border-box;
@@ -18,6 +17,10 @@ html{
 body{
     height: 100vh;
     background-color:hsl(210, 46%, 95%);
+}
+
+main{
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -109,9 +112,13 @@ body{
     color:black;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 900px) {
     .container{
         display: flex;
         flex-direction: column;
+    }
+    .comment{
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
 }
